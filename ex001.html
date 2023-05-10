@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Bem vindo Maluco !</h1>
+    
+    <script>
+        window.alert('Bom dia corno, umabora pra luta')      
+        var nome = window.prompt('Como te chamam?')
+        var pr = window.prompt('Prefere o Sr.() com a, o ou e?')
+        window.confirm('Tu é baiano '+ nome + '?' )
+
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite um número: '))
+        var s = n1 + n2
+        window.alert(`O resultado da soma de ${n1} e ${n2} é ${s} !`)
+        document.write(`<h1>Bem-vindo Sr.(${pr}) ${nome}!</h1>`)
+        document.write(`O resultado da sua soma é ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        
+        
+
+    </script>
 </body>
 </html>

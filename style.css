@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+html{
+
+    background-image: linear-gradient(to bottom , #582356, #2b965b );
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
