@@ -7,16 +7,28 @@
 </head>
 <body>
     <h1>Pergunta que vale <strong>1 MILHÃO DE REAIS</strong></h1>
-    Quem roeu a roupa do rei de roma? <input type="text" name="resp" id="resp">
-    <input type="button" value="Responder" onclick="Resposta()">
+    <p>Quem roeu a roupa do rei de roma?</p> <input type="text" name="resp" id="resp" >
+    <input type="button" value="Responder" onclick="Resposta()" >
     <div id="res">
 
     </div>
     <script>
-        function Resposta(){
-            var perg = document.querySelector('input#resp')
+        var resp = document.getElementById('resp')
+        function Resposta(){  
+            if(resp.value == "RATO"){
+            res.innerHTML = `Acertou, realmente foi o ${resp.value}!` 
+              } else if(resp.value == ""){
+                res.innerHTML = `Digite algo por favor!`
+                 
+              }
+              else{
+                res.innerHTML = `Voce erou` 
+
+              }
             
-        }
+            }
+              
+            
     </script>
     
 </body>
