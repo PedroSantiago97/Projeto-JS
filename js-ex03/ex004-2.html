@@ -7,13 +7,14 @@
 </head>
 <body>
    
-    <p>Digite o seu País:</p> <input type="text" name="pais" id="lcl">
+    <p>Digite o seu País:</p> <input type="text" name="pais" id="lcl" >
 
-    <input type="button" value="Verificar" onclick="Resposta()">
+    <input type="button" value="Verificar" onclick="Resposta()" id="mybtn">
 
     <div id="res">
     </div>
     <script>
+        var botao = document.getElementById("mybtn")
         var pais = document.getElementById('lcl')
         function Resposta(){  
 
@@ -29,6 +30,8 @@
             }
             
         }
+ 
+        
         
     </script>
     
