@@ -19,12 +19,11 @@ section {
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.363);
 }
 
+
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
 }
 
-#res {
-    margin-bottom: 30px;
-}
