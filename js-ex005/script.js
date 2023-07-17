@@ -1,15 +1,18 @@
 function verificar() {
 
     var data = new Date()
-    var ano = data.getFullYear()
+    var ano = data.getFullYear(data)
     var fano = document.getElementById('txtano')
+    var tano = fano.value
+    var kano = new Date(tano)
+    var jano = kano.getFullYear(kano)
     var res = document.getElementById('res')
 
-    if (fano.value.legth == 0 || Number(fano.value) > ano) {
+    if (fano.value.legth == 0 || Number(jano.value) > ano) {
         window.alert( '[Erro] Verifique os dados e tente novamente')
     } else {
         var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
+        var idade = ano - jano
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
