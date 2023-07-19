@@ -7,6 +7,10 @@ function verificar() {
     var kano = new Date(tano)
     var jano = kano.getFullYear(kano)
     var res = document.getElementById('res')
+    var mesid = kano.getMonth() + 1
+    var diaid = kano.getDate() + 1
+    var diah = data.getDate() + 1
+    var mesh = data.getMonth() + 1
 
     if (fano.value.legth == 0 || Number(jano.value) > ano) {
         window.alert( '[Erro] Verifique os dados e tente novamente')
@@ -16,6 +20,9 @@ function verificar() {
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
+        
+
+            
 
         if (fsex[0].checked){
             genero = 'Homem'
@@ -57,7 +64,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center' 
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        res.innerHTML = `Detectamos ${genero} com ${diaid} anos`
         res.appendChild(img)
     }
 }
